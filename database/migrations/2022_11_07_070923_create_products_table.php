@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name', 254)->require();
             $table->string('slug', 254)->require();
             $table->unsignedInteger('meta_id')->require();
-            $table->unsignedInteger('price', 254);
-            $table->unsignedInteger('sale_price', 254);
+            $table->unsignedInteger('price');
+            $table->unsignedInteger('sale_price');
             $table->string('main_image', 254)->nullable();
             $table->unsignedInteger('images')->nullable();
             $table->timestamps();

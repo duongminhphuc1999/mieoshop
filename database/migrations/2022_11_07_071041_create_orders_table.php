@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('address', 255)->require();
             $table->string('email', 255)->nullable();
             $table->string('address_2', 255)->nullable();
-            $table->int('zipcode')->nullable();
+            $table->unsignedInteger('zipcode')->nullable();
             $table->string('city', 255)->nullable();
             $table->string('district', 255)->nullable();
             $table->unsignedTinyInteger('ship_status')->default(0);
